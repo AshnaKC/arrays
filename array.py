@@ -3,12 +3,11 @@ a.sort()
 print(a)
 P= int(input("Enter number P = "))
 def arrays(a,P):
+    index = len(a)
     for x in a:
         if x>= P:
             index= a.index(x)
-            print("Index value is",index)
-            return index
-        else:
-            index= len(a)
-    print("Index value is",index)
-arrays(a,P)
+            break
+    return index
+arr= arrays(a,P)
+print("Index value is",arr)
